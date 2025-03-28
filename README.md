@@ -4,8 +4,12 @@ Here we provide sourcecodes of APDMMO, which is accepted by GECCO 2025.
 
 ## Citation
 
-todo
-
+@article{ma2025accurate,
+  title={Accurate Peak Detection in Multimodal Optimization via Approximated Landscape Learning},
+  author={Ma, Zeyuan and Lian, Hongqiao and Qiu, Wenjie and Gong, Yue-Jiao},
+  journal={arXiv preprint arXiv:2503.18066},
+  year={2025}
+}
 
 ## Run the code
 The optimization process on CEC2013 multimodal optimization benchmark can be  activated via the command below.
