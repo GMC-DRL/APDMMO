@@ -4,13 +4,21 @@ Here we provide sourcecodes of APDMMO, which is accepted by GECCO 2025.
 
 ## Citation
 
-```bash
+The PDF version of the paper is available [here](https://arxiv.org/abs/2503.18066). If you find our APDMMO useful, please cite it in your publications or projects.
+
+```latex
 @article{ma2025accurate,
   title={Accurate Peak Detection in Multimodal Optimization via Approximated Landscape Learning},
   author={Ma, Zeyuan and Lian, Hongqiao and Qiu, Wenjie and Gong, Yue-Jiao},
   journal={arXiv preprint arXiv:2503.18066},
   year={2025}
 }
+```
+
+## Requirements
+You can install all of dependencies of APDMMO via the command below.
+```bash
+pip install -r requirements.txt
 ```
 
 ## Run the code
