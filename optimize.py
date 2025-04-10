@@ -26,7 +26,7 @@ def generate_optimize_sampling(seed,num_of_try,strategy,problem):
     return temp
 
 def local_optimization_parallel(temp, seed,num_of_try,strategy,num_of_step,device,model,lr,opt_class,bc,problem,mu_x, std_x, mu_y, std_y):
-    print('Start Local Optimization...')
+    print('Start Surrogate Optimization...')
 
     dim = problem.get_dimension()
     lowbound = torch.zeros(dim).to(device)

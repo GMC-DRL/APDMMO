@@ -113,7 +113,7 @@ def local_refine(problem, pid, seeds, max_fes, ls_seed): # torch -> torch
     
     early_stopping_evaluations = 20 * popsize
 
-    print(f'sigma: {sigma}, popsize:{popsize}, max_function_evaluations: {max_function_evaluations}, early_stop_fes: {early_stopping_evaluations}')
+    # print(f'sigma: {sigma}, popsize:{popsize}, max_function_evaluations: {max_function_evaluations}, early_stop_fes: {early_stopping_evaluations}')
     archive_pos = []
 
     tosolve_problem = {'fitness_function': tosolve_func,  # define problem arguments
@@ -142,7 +142,7 @@ def local_refine(problem, pid, seeds, max_fes, ls_seed): # torch -> torch
 
     archive_pos = np.array(archive_pos)
     # print('local refine use {} fes, max_fes: {}'.format(used_fes, max_fes))
-    print('local refine use {} points'.format(count))   
+    # print('local refine use {} points'.format(count))   
 
      
     return archive_pos

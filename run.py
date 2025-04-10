@@ -140,11 +140,13 @@ for pid in pid_list:
 
     seeds = find_seeds(problem, optimas, obj_optimas)
 
+    print('start local search')
+
     run_time = 5
     peak_rate = np.zeros((20, run_time, 5))
     succ_rate = np.zeros((20, run_time,5))
     
-    for i_run in tqdm(range(run_time), leave = False):
+    for i_run in tqdm(range(run_time), leave = True):
         ls_seed = np.random.randint(1, 1000)
         archive_pos = local_refine(problem, pid, seeds, max_fes=int(problem.get_maxfes() * (1-namda)), ls_seed = ls_seed)
         
